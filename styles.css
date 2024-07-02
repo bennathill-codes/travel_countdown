@@ -1,0 +1,97 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', 'sans-serif';
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/tokyo_skyline.png);
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.logo {
+    width: 175px;
+    height: auto;
+    animation: logo 8s linear infinite;
+    position: relative;
+}
+
+@keyframes logo {
+    0% {
+        left: 0;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        left: calc(100% - 175px);
+        opacity: 0;
+    }
+}
+
+
+.content {
+    top: 40%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: center;
+}
+
+.content p {
+    font-size: 30px;
+}
+
+.content h1 {
+    font-size: 100px;
+    font-weight: 600;
+    color:aquamarine;
+    margin-bottom: 10px;
+}
+
+.countdown {
+    display: flex; 
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.countdown div {
+    flex-basis: 100px;
+    margin-right: 20px;
+}
+
+.countdown p {
+    font-size: 80px;
+    margin-bottom: -14px;
+}
+
+.countdown span {
+    font-size: 25px;
+}
